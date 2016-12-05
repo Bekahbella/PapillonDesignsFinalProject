@@ -36,6 +36,11 @@ summary {
   display: block;
 }
 
+.homeheader
+{
+    font-family: Broadway;
+}
+
 audio,
 canvas,
 video {
@@ -4127,15 +4132,19 @@ textarea.input-group-sm > .input-group-btn > .btn {
     height: auto !important;
     padding-bottom: 0;
     overflow: visible !important;
+    background-color: darkslategray;
+    font-family: Broadway;
   }
   .navbar-collapse.in {
     overflow-y: visible;
   }
   .navbar-collapse .navbar-nav.navbar-left:first-child {
     margin-left: -15px;
+    
   }
   .navbar-collapse .navbar-nav.navbar-right:last-child {
     margin-right: -15px;
+
   }
   .navbar-collapse .navbar-text:last-child {
     margin-right: 0;
@@ -4926,20 +4935,22 @@ a.list-group-item.active > .badge,
 .nav-pills > li > a > .badge {
   margin-left: 3px;
 }
-
+/*controls jumbotron on home page heading*/
 .jumbotron {
   padding: 30px;
   margin-bottom: 30px;
   font-size: 21px;
   font-weight: 200;
   line-height: 2.1428571435;
-  color: inherit;
-  background-color: #eeeeee;
+  background-color: #fc33ff;
+ 
 }
-
+/*controls font/color for jumbotron on home pg heading*/
 .jumbotron h1 {
   line-height: 1;
-  color: inherit;
+  /*color: darkslategray;*/
+  font-family: cursive;
+  font-size: 80px;
 }
 
 .jumbotron p {
@@ -4960,7 +4971,7 @@ a.list-group-item.active > .badge,
     padding-left: 60px;
   }
   .jumbotron h1 {
-    font-size: 63px;
+    font-size: 80px;
   }
 }
 
