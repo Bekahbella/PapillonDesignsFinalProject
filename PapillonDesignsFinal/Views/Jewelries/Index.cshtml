@@ -30,14 +30,15 @@
         <th>
             @Html.DisplayNameFor(model => model.Description)
         </th>
-        @*<th>
+        <th>
             @Html.DisplayNameFor(model => model.Color)
-        </th>*@
+        </th>
 
         
     </tr>
 
-@foreach (var item in Model) {
+@foreach (var item in Model)
+{
     <tr>
 
         <td>
@@ -54,15 +55,18 @@
         <td>
             @Html.DisplayFor(modelItem => item.Description)
         </td>
-        @*<td>
-            @Html.DisplayFor(modelItem => item.Color)
-        </td>*@
-
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.JewelryId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.JewelryId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.JewelryId })
+                @Html.DisplayFor(modelItem => item.Color)
+            </td>
+        @*@if (User.IsInRole("Admin"))
+        {*@
+            @*Trying to make it so only admin can view then put closing brackets after lines below*@ 
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.JewelryId }) |
+            @Html.ActionLink("Details", "Details", new { id = item.JewelryId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.JewelryId })
         </td>
+         @*}*@ 
     </tr>
 }
 
