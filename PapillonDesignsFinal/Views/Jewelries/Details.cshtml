@@ -52,13 +52,22 @@
 
         <dt>
             @Html.DisplayNameFor(model => model.ImageURL)
+            
         </dt>
-
         <dd>
+
             @Html.DisplayFor(model => model.ImageURL)
+            @*<img src= "~/Content/Images/BraceletImages/blackLocketBracelet.jpg"  />*@
+            @*<img src="@UrlContent>*@
+            @*<img src="~/Content/Images/@imagePath" alt="Image" />*@
+            @*<img src="~/Content/Images/@item.ImageURL" alt="jewelry image" height="150" width="155" />*@
+            
+            
         </dd>
 
+
     </dl>
+
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.JewelryId }) |
