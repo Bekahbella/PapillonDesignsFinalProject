@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using PapillonDesignsFinal.Models;
 
+
 namespace PapillonDesignsFinal.Controllers
 {
     public class JewelriesController : Controller
@@ -21,6 +22,14 @@ namespace PapillonDesignsFinal.Controllers
             return View(jewelries.ToList());
         }
 
+        // /GET: Earring
+        //public ActionResult Earrings()
+        //{
+        //    Repository.EarringRepository JewelryRepo = new EarringRepository();
+        //    ModelState.Clear();//model state will create a dic  object that will contain state of object. Clear because we do not need it in memory
+        //    return View(JewelryRepo.Earrings());
+        //}
+        
         // GET: Jewelries/Details/5
         public ActionResult Details(int? id)
         {

@@ -35,6 +35,20 @@ section,
 summary {
   display: block;
 }
+.mini-nav
+{
+    font-family: Broadway;
+    list-style-type: none;
+    display: inline;
+    font-size: 25px;
+    font-weight: bold;
+}
+.contact-style
+{
+    color: deeppink;
+    font-family: Broadway;
+    font-size: 25px;
+}
 
 .homeheader
 {

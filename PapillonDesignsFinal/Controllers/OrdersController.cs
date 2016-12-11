@@ -13,7 +13,7 @@ namespace PapillonDesignsFinal.Controllers
     public class OrdersController : Controller
     {
         private DataModel db = new DataModel();
-
+        [Authorize(Roles ="Admin")]
         // GET: Orders
         public ActionResult Index()
         {
@@ -36,6 +36,7 @@ namespace PapillonDesignsFinal.Controllers
             return View(order);
         }
 
+        [Authorize(Roles = "Member")]
         // GET: Orders/Create
         public ActionResult Create()
         {

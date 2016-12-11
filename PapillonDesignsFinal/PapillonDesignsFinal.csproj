@@ -198,10 +198,13 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\BlueFlower.jpg" />
+    <Content Include="Content\Images\BlueNecklace.jpg" />
     <Content Include="Content\Images\BraceletImages\blackLocketBracelet.jpg" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\BraceletImages\elephantBracelet.jpg" />
+    <Content Include="Content\Images\BrownBold.jpg" />
     <Content Include="Content\Images\EarringImages\etherialDropEarrings.jpg" />
     <Content Include="Content\Images\EarringImages\etherialVineEarrings.jpg" />
     <Content Include="Content\Images\BraceletImages\greenFeatherBracelet.jpg" />
@@ -214,6 +217,7 @@
     <Content Include="Content\Images\EarringImages\rainbowFeathersEarrings.jpg" />
     <Content Include="Content\Images\EarringImages\stampedInGreenEarrings.jpg" />
     <Content Include="Content\Images\EarringImages\vacationBreezeEarrings.jpg" />
+    <Content Include="Content\Images\FreshwaterPearl.jpg" />
     <Content Include="Content\Images\HomePgPDImg.jpg" />
     <Content Include="Content\Images\NecklaceImages\aquaGlacierPendantNecklace.jpg" />
     <Content Include="Content\Images\NecklaceImages\blackGoldAgatePendantNecklace.jpg" />
@@ -226,8 +230,11 @@
     <Content Include="Content\Images\NecklaceImages\unicornPendantNecklace.jpg" />
     <Content Include="Content\Images\PDLogoSquare.jpg" />
     <Content Include="Content\Images\PDLongLogo.jpg" />
+    <Content Include="Content\Images\PineCone.jpg" />
+    <Content Include="Content\Images\PurpleMarmalade.jpg" />
     <Content Include="Content\Images\SetImages\redLetterDaySet.jpg" />
     <Content Include="Content\Images\SetImages\silverOvalSet.jpg" />
+    <Content Include="Content\Images\TwirlyNecklace.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -310,6 +317,7 @@
     <Content Include="Views\Orders\Details.cshtml" />
     <Content Include="Views\Orders\Edit.cshtml" />
     <Content Include="Views\Orders\Index.cshtml" />
+    <Content Include="Views\Jewelries\Earrings.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -13,7 +13,7 @@ namespace PapillonDesignsFinal.Controllers
     public class CustomersController : Controller
     {
         private DataModel db = new DataModel();
-
+        [Authorize(Roles = "Admin")]
         // GET: Customers
         public ActionResult Index()
         {
