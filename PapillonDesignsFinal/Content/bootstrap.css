@@ -39,9 +39,10 @@ summary {
 {
     font-family: Broadway;
     list-style-type: none;
-    display: inline;
+    display: inline-block;
     font-size: 25px;
     font-weight: bold;
+    color: deeppink;
 }
 .contact-style
 {
@@ -53,6 +54,13 @@ summary {
 .homeheader
 {
     font-family: Broadway;
+}
+.jewelryheader
+{
+font-family: Broadway;
+color: deeppink;
+font-size: 25px;
+
 }
 
 audio,
