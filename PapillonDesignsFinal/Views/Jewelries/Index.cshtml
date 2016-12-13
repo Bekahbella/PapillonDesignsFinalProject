@@ -3,31 +3,34 @@
 @{
     ViewBag.Title = "Index";
 }
-<div class="homeheader">
-    <h2>Available Jewelry Listing</h2>
-</div>
+
 <center>
     <div class="jumbotron">
         <h1>Papillon Designs</h1>
         <h2 class="homeheader">Unique jewelry for every occasion</h2>
     </div>
 </center>
+
+
 @if (User.IsInRole("Admin"))
 {
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 }
+
+
 <p>
-    
-        <ul class="mini-nav">
-            <li>@Html.ActionLink("Earrings", "", "")</li>
-            <li>@Html.ActionLink("Bracelets", "", "")</li>
-            <li>@Html.ActionLink("Necklaces", "", "")</li>
-            <li>@Html.ActionLink("Sets", "", "")</li>
+    <div class="row">
+        <ul class= "col-sm-12 mini-nav">
+            <li class="col-sm-3">@Html.ActionLink("Earrings", "Earrings", "Jewelries")</li>
+            <li class="col-sm-3">@Html.ActionLink("Bracelets", "Bracelets", "Jewelries")</li>
+            <li class="col-sm-3">@Html.ActionLink("Necklaces", "Necklaces", "Jewelries")</li>
+            <li class="col-sm-3">@Html.ActionLink("Sets", "Sets", "Jewelries")</li>
 
             @* name you want to display, name of view, name of view folder/controller  *@
         </ul>
+    </div>
     </p>
 <center>
     <p class="jewelryheader">All Jewelry </p>
@@ -79,12 +82,14 @@
         {
             @*Trying to make it so only admin can view then put closing brackets after lines below*@
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.JewelryId }) |
-            @Html.ActionLink("Details", "Details", new { id = item.JewelryId }) |
+            @Html.ActionLink("Edit", "Edit", new { id = item.JewelryId }) |    
             @Html.ActionLink("Delete", "Delete", new { id = item.JewelryId })
+            @Html.ActionLink("Details", "Details", new { id = item.JewelryId }) |
+
         </td>
-         }
+        }
     </tr>
+
 }
 
 </table>

@@ -318,6 +318,9 @@
     <Content Include="Views\Orders\Edit.cshtml" />
     <Content Include="Views\Orders\Index.cshtml" />
     <Content Include="Views\Jewelries\Earrings.cshtml" />
+    <Content Include="Views\Jewelries\Bracelets.cshtml" />
+    <Content Include="Views\Jewelries\Necklaces.cshtml" />
+    <Content Include="Views\Jewelries\Sets.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,100 @@
+﻿@model IEnumerable<PapillonDesignsFinal.Models.Jewelry>
+
+@{
+    ViewBag.Title = "Sets";
+}
+
+<center>
+    <div class="jumbotron">
+        <h1>Papillon Designs</h1>
+        <h2 class="homeheader">Unique jewelry for every occasion</h2>
+    </div>
+</center>
+
+
+<div class="row">
+    <ul class="col-sm-12 mini-nav">
+        <li class="col-sm-2">@Html.ActionLink("Earrings", "Earrings", "Jewelries")</li>
+        <li class="col-sm-2">@Html.ActionLink("Bracelets", "Bracelets", "Jewelries")</li>
+        <li class="col-sm-2">@Html.ActionLink("Necklaces", "Necklaces", "Jewelries")</li>
+    </ul>
+    </div>
+
+
+    <center>
+        <p class="jewelryheader">Sets List </p>
+    </center>
+
+
+
+    <table class="table">
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Color)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageURL)
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.JewelryTypeId)
+                </th>*@
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+
+
+            if (item.JewelryTypeId == 4)
+            {
+                <tr>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Color)
+                    </td>
+                    <td>
+                        @*@Html.DisplayFor(modelItem => item.ImageURL)*@
+                        <img src="~/Content/Images/@item.ImageURL" alt="jewelry image" height="150" width="155" />
+                    </td>
+
+                    @*<td>
+
+                            @Html.DisplayFor(modelItem => item.JewelryTypeId)
+
+
+                        </td>*@
+                    @if (User.IsInRole("Admin"))
+                    {
+                        @*Trying to make it so only admin can view then put closing brackets after lines below*@
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.JewelryId }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.JewelryId })
+                            @Html.ActionLink("Details", "Details", new { id = item.JewelryId }) |
+
+                        </td>
+                    }
+                </tr>
+
+            }
+        }
+
+    </table>

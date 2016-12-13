@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<PapillonDesignsFinal.Models.Jewelry>
 
 @{
-    ViewBag.Title = "Earrings";
+    ViewBag.Title = "Necklaces";
 }
 
 <center>
@@ -11,19 +11,19 @@
     </div>
 </center>
 
-
 <p>
     <div class="row">
         <ul class="col-sm-12 mini-nav">
+            <li class="col-sm-2">@Html.ActionLink("Earrings", "Earrings", "Jewelries")</li>
             <li class="col-sm-2">@Html.ActionLink("Bracelets", "Bracelets", "Jewelries")</li>
-            <li class="col-sm-2">@Html.ActionLink("Necklaces", "Necklaces", "Jewelries")</li>
             <li class="col-sm-2">@Html.ActionLink("Sets", "Sets", "Jewelries")</li>
         </ul>
     </div>
 </p>
 
+
 <center>
-    <p class="jewelryheader">Earrings List </p>
+    <p class="jewelryheader">Necklaces List </p>
 </center>
 
 
@@ -55,9 +55,8 @@
     {
 
 
-        if (item.JewelryTypeId == 1)
+        if (item.JewelryTypeId == 3)
         {
-
             <tr>
 
                 <td>
@@ -98,4 +97,4 @@
         }
     }
 
-        </table>
+</table>

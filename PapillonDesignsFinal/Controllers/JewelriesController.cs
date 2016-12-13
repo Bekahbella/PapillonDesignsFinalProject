@@ -22,14 +22,42 @@ namespace PapillonDesignsFinal.Controllers
             return View(jewelries.ToList());
         }
 
-        // /GET: Earring
+        public ActionResult Earrings()
+        {
+            var jewelries = db.Jewelries.Include(j => j.JewelryType);
+            return View(jewelries.ToList());
+
+        }
+
+        public ActionResult Bracelets()
+        {
+            var jewelries = db.Jewelries.Include(j => j.JewelryType);
+            return View(jewelries.ToList());
+
+        }
+
+        public ActionResult Necklaces()
+        {
+            var jewelries = db.Jewelries.Include(j => j.JewelryType);
+            return View(jewelries.ToList());
+
+        }
+
+        public ActionResult Sets()
+        {
+            var jewelries = db.Jewelries.Include(j => j.JewelryType);
+            return View(jewelries.ToList());
+
+        }
+
+        //GET: Earring
         //public ActionResult Earrings()
         //{
-        //    Repository.EarringRepository JewelryRepo = new EarringRepository();
+        //    Repository.EarringRepository JewelryRepo = new Repository.EarringRepository();
         //    ModelState.Clear();//model state will create a dic  object that will contain state of object. Clear because we do not need it in memory
-        //    return View(JewelryRepo.Earrings());
+        //    return View(Earrings());
         //}
-        
+
         // GET: Jewelries/Details/5
         public ActionResult Details(int? id)
         {
