@@ -90,10 +90,11 @@
                     <td>
                         @Html.ActionLink("Edit", "Edit", new { id = item.JewelryId }) |
                         @Html.ActionLink("Delete", "Delete", new { id = item.JewelryId })
-                        @Html.ActionLink("Details", "Details", new { id = item.JewelryId }) |
-
                     </td>
                 }
+                <td>
+                    @Html.ActionLink("Details", "Details", new { id = item.JewelryId })
+                </td>
             </tr>
 
         }

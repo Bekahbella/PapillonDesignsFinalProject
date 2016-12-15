@@ -180,6 +180,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\OrderDetailsController.cs" />
     <Compile Include="Controllers\OrdersController.cs" />
+    <Compile Include="Controllers\SpecialsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -205,6 +206,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\BraceletImages\elephantBracelet.jpg" />
     <Content Include="Content\Images\BrownBold.jpg" />
+    <Content Include="Content\Images\DecSpecial.jpg" />
     <Content Include="Content\Images\EarringImages\etherialDropEarrings.jpg" />
     <Content Include="Content\Images\EarringImages\etherialVineEarrings.jpg" />
     <Content Include="Content\Images\BraceletImages\greenFeatherBracelet.jpg" />
@@ -321,6 +323,7 @@
     <Content Include="Views\Jewelries\Bracelets.cshtml" />
     <Content Include="Views\Jewelries\Necklaces.cshtml" />
     <Content Include="Views\Jewelries\Sets.cshtml" />
+    <Content Include="Views\Specials\Specials.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -333,6 +336,7 @@
     <Folder Include="Areas\Public\Controllers\" />
     <Folder Include="Areas\Public\Models\" />
     <Folder Include="Areas\Public\Views\Shared\" />
+    <Folder Include="Views\Default\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
