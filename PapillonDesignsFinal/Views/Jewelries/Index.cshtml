@@ -3,7 +3,10 @@
 @{
     ViewBag.Title = "Index";
 }
-
+@if (User.IsInRole("Admin"))
+{
+    <br />
+}
 <center>
     <div class="jumbotron">
         <h1>Papillon Designs</h1>

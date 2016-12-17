@@ -22,16 +22,16 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About Papillon Designs", "About", "Home")</li>
+                    <li>@Html.ActionLink("About Us", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Jewelry", "Index", "Jewelries")</li>
-                    <li>@Html.ActionLink("Member Specials", "Specials", "Specials")</li>
-                     @if (User.IsInRole("Admin"))
-                     {
-                    <li>@Html.ActionLink("New Order", "Create", "Orders")</li>
-                    <li>@Html.ActionLink("Order Details", "Index", "OrderDetails")</li>
-                    <li>@Html.ActionLink("Customers", "Index", "Customers")</li>
-                     }
+                    <li>@Html.ActionLink("Specials", "Specials", "Specials")</li>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <li>@Html.ActionLink("Orders", "Index", "Orders")</li>
+                        <li>@Html.ActionLink("Order Details", "Index", "OrderDetails")</li>
+                        <li>@Html.ActionLink("Customers", "Index", "Customers")</li>
+                    }
                     @* name you want to display, name of view, name of view folder/controller  *@
                 </ul>
                 @Html.Partial("_LoginPartial")

@@ -15,6 +15,8 @@ namespace PapillonDesignsFinal.Controllers
         private DataModel db = new DataModel();
         [Authorize(Roles ="Admin")]
         // GET: Orders
+
+        //var assignments = db.Assignments.Include(a => a.Exercise).Include(a => a.User);
         public ActionResult Index()
         {
             var orders = db.Orders.Include(o => o.Customer);
