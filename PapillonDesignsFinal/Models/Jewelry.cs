@@ -15,12 +15,14 @@ namespace PapillonDesignsFinal.Models
         {
             OrderDetails = new HashSet<OrderDetail>();
         }
-
+        [DisplayName("Jewelry Id")]
         public int JewelryId { get; set; }
+
         [DisplayName("Name")]
         [Required]
         [StringLength(100)]
         public string Title { get; set; }
+
         [DisplayName("Cost")]
         public decimal Price { get; set; }
 
@@ -30,6 +32,8 @@ namespace PapillonDesignsFinal.Models
 
         [StringLength(100)]
         public string Color { get; set; }
+
+
         [DisplayName("Image")]
         [StringLength(255)]
         public string ImageURL { get; set; }

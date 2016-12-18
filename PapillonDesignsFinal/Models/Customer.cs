@@ -2,6 +2,7 @@ namespace PapillonDesignsFinal.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
@@ -15,11 +16,12 @@ namespace PapillonDesignsFinal.Models
         }
 
         public int CustomerID { get; set; }
-
+        [DisplayName("First Name")]
         [Required]
         [StringLength(100)]
         public string FirstName { get; set; }
 
+        [DisplayName("Last Name")]
         [Required]
         [StringLength(100)]
         public string LastName { get; set; }
@@ -33,6 +35,7 @@ namespace PapillonDesignsFinal.Models
         [StringLength(2)]
         public string State { get; set; }
 
+        [DisplayName("Zip Code")]
         [StringLength(5)]
         public string ZipCode { get; set; }
 
