@@ -195,7 +195,6 @@
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\OrderDetail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\EarringRepository.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -205,6 +204,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\BraceletImages\elephantBracelet.jpg" />
+    <Content Include="Content\Images\BraceletImages\OvalBracelet.jpg" />
     <Content Include="Content\Images\BrownBold.jpg" />
     <Content Include="Content\Images\DecSpecial.jpg" />
     <Content Include="Content\Images\EarringImages\etherialDropEarrings.jpg" />
@@ -219,6 +219,7 @@
     <Content Include="Content\Images\EarringImages\rainbowFeathersEarrings.jpg" />
     <Content Include="Content\Images\EarringImages\stampedInGreenEarrings.jpg" />
     <Content Include="Content\Images\EarringImages\vacationBreezeEarrings.jpg" />
+    <Content Include="Content\Images\FBLogo.jpg" />
     <Content Include="Content\Images\FreshwaterPearl.jpg" />
     <Content Include="Content\Images\HomePgPDImg.jpg" />
     <Content Include="Content\Images\NecklaceImages\aquaGlacierPendantNecklace.jpg" />
